@@ -3,7 +3,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5Sn4HFELgy1TZW2x_KcImReok-RrBJeHrg&s",
         "year": 2015,
         "price": 7500,
         "available": false
@@ -12,7 +12,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://www.abarth.it/content/dam/abarth/gamma/my23/abarth-595-695/editorial-content/configure-and-order/Abarth_595-Configure_and_order-Mobile-768x604.jpg",
         "year": 2010,
         "price": 3500,
         "available": true
@@ -21,7 +21,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "data:image/jpeg;base64,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",
         "year": 2009,
         "price": 5200,
         "available": false
@@ -30,7 +30,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "modelImage": "https://www.fordgruppoferrari.it/images/vehicles/4291613/0/large",
         "year": 2014,
         "price": 9700,
         "available": true
@@ -39,7 +39,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://eurocar.media.weicola.it/eurocar/weicola/medium/-/+2024+08+02+V275846_66acfe4c760b6.jpg/e10cec364380e17bfdfe4789d7f115b4.jpg",
         "year": 2012,
         "price": 4300,
         "available": true
@@ -48,7 +48,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://www.lombardamotori.it/images/vehicles/4284334/0/large",
         "year": 2020,
         "price": 41700,
         "available": false

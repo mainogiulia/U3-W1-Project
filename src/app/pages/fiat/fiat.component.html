@@ -5,17 +5,33 @@
 <img src="/fiat-logo.png" alt="">
 </div>
   <div class="featuredCars">
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Modello auto</h5>
-    <div class="carInfo">
-    <p class="card-text">Anno</p>
-    <p class="card-text">Prezzo</p>
-    <p class="card-text">Disponibilità</p>
-  </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <div class="card" [ngClass]="{'available':fiatCarArr[0].available, 'notAvailable':!fiatCarArr[0].available}" style="width: 18rem;">
+      <img src={{fiatCarArr[0].modelImage}} class="card-img-top" alt="car image">
+      <div class="card-body">
+        <h5 class="card-title">{{fiatCarArr[0].brand}} - {{fiatCarArr[0].model}}</h5>
+        <div class="carInfo">
+        <p class="card-text">Anno: {{fiatCarArr[0].year}}</p>
+        <p class="card-text">Prezzo: {{fiatCarArr[0].price}}€</p>
+        <p class="card-text" *ngIf="fiatCarArr[0].available; else bloccoElse">Disponibile</p>
+        <ng-template #bloccoElse>
+          <p>Attualmente non disponibile</p>
+        </ng-template>
+      </div>
+      </div>
+    </div>
+    <div class="card" [ngClass]="{'available':fiatCarArr[1].available, 'notAvailable':!fiatCarArr[1].available}" style="width: 18rem;">
+      <img src={{fiatCarArr[1].modelImage}} class="card-img-top" alt="car image">
+      <div class="card-body">
+        <h5 class="card-title">{{fiatCarArr[1].brand}} - {{fiatCarArr[1].model}}</h5>
+        <div class="carInfo">
+        <p class="card-text">Anno: {{fiatCarArr[1].year}}</p>
+        <p class="card-text">Prezzo: {{fiatCarArr[1].price}}€</p>
+        <p class="card-text" *ngIf="fiatCarArr[1].available; else bloccoElse">Disponibile</p>
+        <ng-template #bloccoElse>
+          <p>Attualmente non disponibile</p>
+        </ng-template>
+      </div>
+      </div>
+    </div>
 </div>
 </main>

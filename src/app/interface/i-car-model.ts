@@ -1,4 +1,4 @@
-export interface ICarModel {
+export interface iCarModel {
   brand: string
   brandLogo: string
   model: string
@@ -9,8 +9,8 @@ export interface ICarModel {
 }
 
 
-// export type Root = Root2[]
+// export type iCar = iCarModel[]
 
-// export interface Root2 {
+// export interface iCarModel {
 
 // }

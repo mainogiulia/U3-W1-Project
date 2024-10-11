@@ -5,17 +5,33 @@
   <img src="/audi-logo.png" alt="">
   </div>
     <div class="featuredCars">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Modello auto</h5>
-      <div class="carInfo">
-      <p class="card-text">Anno</p>
-      <p class="card-text">Prezzo</p>
-      <p class="card-text">Disponibilità</p>
-    </div>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+      <div class="card" [ngClass]="{'available':audiCarArr[0].available, 'notAvailable':!audiCarArr[0].available}" style="width: 18rem;">
+        <img src={{audiCarArr[0].modelImage}} class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">{{audiCarArr[0].brand}} - {{audiCarArr[0].model}}</h5>
+          <div class="carInfo">
+          <p class="card-text">Anno: {{audiCarArr[0].year}}</p>
+          <p class="card-text">Prezzo: {{audiCarArr[0].price}}€</p>
+          <p class="card-text" *ngIf="audiCarArr[0].available; else bloccoElse">Disponibile</p>
+          <ng-template #bloccoElse>
+            <p>Attualmente non disponibile</p>
+          </ng-template>
+        </div>
+        </div>
+      </div>
+      <div class="card" [ngClass]="{'available':audiCarArr[1].available, 'notAvailable':!audiCarArr[1].available}" style="width: 18rem;">
+        <img src={{audiCarArr[1].modelImage}} class="card-img-top" alt="car image">
+        <div class="card-body">
+          <h5 class="card-title">{{audiCarArr[1].brand}} - {{audiCarArr[1].model}}</h5>
+          <div class="carInfo">
+          <p class="card-text">Anno: {{audiCarArr[1].year}}</p>
+          <p class="card-text">Prezzo: {{audiCarArr[1].price}}€</p>
+          <p class="card-text" *ngIf="audiCarArr[1].available; else bloccoElse">Disponibile</p>
+          <ng-template #bloccoElse>
+            <p>Attualmente non disponibile</p>
+          </ng-template>
+        </div>
+        </div>
+      </div>
   </div>
   </main>

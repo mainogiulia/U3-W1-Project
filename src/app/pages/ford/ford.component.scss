@@ -1,10 +1,15 @@
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 .pageTitle {
   display: flex;
   justify-content: center;
-img {
-  width:100px;
-  padding-inline: 1rem;
-}
+  margin-bottom: 2rem;
+  img {
+    width: 100px;
+    padding-inline: 1rem;
+  }
 }
 
 .featuredCars {
@@ -12,18 +17,30 @@ img {
   gap: 5rem;
   justify-content: center;
   .card {
-    border: orange 5px ridge;
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+    }
   }
   .card-body {
     text-align: center;
   }
-.carInfo {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 1rem;
-  justify-content: center;
-  p {
-  margin-inline: 1rem;
+  .carInfo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    justify-content: center;
+    p {
+      margin-inline: 0.5rem;
+    }
+  }
 }
+
+.notAvailable {
+  border: red 5px solid;
+  border-radius: 10px;
 }
+.available {
+  border: green 5px solid;
+  border-radius: 10px;
 }

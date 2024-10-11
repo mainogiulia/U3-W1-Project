@@ -13,28 +13,34 @@
 </div>
 <h3>Auto in evidenza</h3>
 <div class="featuredCars">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+  <div class="card" [ngClass]="{'available':carArr[0].available, 'notAvailable':!carArr[0].available}" style="width: 18rem;">
+    <img src={{carArr[0].modelImage}} class="card-img-top" alt="car image">
     <div class="card-body">
-      <h5 class="card-title">Modello auto</h5>
+      <h5 class="card-title">{{carArr[0].brand}} - {{carArr[0].model}}</h5>
       <div class="carInfo">
-      <p class="card-text">Anno</p>
-      <p class="card-text">Prezzo</p>
-      <p class="card-text">Disponibilità</p>
+      <p class="card-text">Anno: {{carArr[0].year}}</p>
+      <p class="card-text">Prezzo: {{carArr[0].price}}€</p>
+      <p class="card-text" *ngIf="carArr[0].available; else bloccoElse">Disponibile</p>
+      <ng-template #bloccoElse>
+        <p>Attualmente non disponibile</p>
+      </ng-template>
     </div>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Vedi modelli simili</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+  <div class="card" [ngClass]="{'available':carArr[1].available, 'notAvailable':!carArr[1].available}" style="width: 18rem;">
+    <img src={{carArr[1].modelImage}} class="card-img-top" alt="car image">
     <div class="card-body">
-      <h5 class="card-title">Modello auto</h5>
+      <h5 class="card-title">{{carArr[1].brand}} - {{carArr[1].model}}</h5>
       <div class="carInfo">
-        <p class="card-text">Anno</p>
-        <p class="card-text">Prezzo</p>
-        <p class="card-text">Disponibilità</p>
+        <p class="card-text">Anno: {{carArr[1].year}}</p>
+      <p class="card-text">Prezzo: {{carArr[1].price}}€</p>
+      <p class="card-text" *ngIf="carArr[1].available; else bloccoElse">Disponibile</p>
+      <ng-template #bloccoElse>
+        <p>Attualmente non disponibile</p>
+      </ng-template>
       </div>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a class="btn btn-primary">Vedi modelli simili</a>
     </div>
   </div>
 </div>
