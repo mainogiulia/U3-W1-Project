@@ -25,7 +25,7 @@
         <p>Attualmente non disponibile</p>
       </ng-template>
     </div>
-      <a href="#" class="btn btn-primary">Vedi modelli simili</a>
+      <a [routerLink]="['/brand', carArr[0].brand]" class="btn btn-primary">Vedi modelli simili</a>
     </div>
   </div>
   <div class="card" [ngClass]="{'available':carArr[1].available, 'notAvailable':!carArr[1].available}" style="width: 18rem;">
