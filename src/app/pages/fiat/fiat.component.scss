@@ -2,10 +2,16 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+h3 {
+
+}
+
 .pageTitle {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  align-items: center;
+  margin-top: 2rem;
   img {
     width: 100px;
     padding-inline: 1rem;
